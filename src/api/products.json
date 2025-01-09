@@ -1,0 +1,67 @@
+[
+    {
+        "cardNo": 1,
+        "name": "Embaka Men's Stylish Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "/photos/products/f1.jpg",
+        "stock": 50
+    },
+    {
+        "cardNo": 2,
+        "name": "Embaka Men's Stylish Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "/photos/products/f2.jpg",
+        "stock": 50
+    },
+    {
+        "cardNo": 3,
+        "name": "Embaka Men's Stylish Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "/photos/products/f3.jpg",
+        "stock": 50
+    },
+    {
+        "cardNo": 4,
+        "name": "Embaka Men's Stylish Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "/photos/products/f4.jpg",
+        "stock": 50
+    },
+    {
+        "cardNo": 5,
+        "name": "Embaka Men's Stylish Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "/photos/products/f5.jpg",
+        "stock": 50
+    },
+    {
+        "cardNo": 6,
+        "name": "Embaka Men's Stylish Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "/photos/products/f6.jpg",
+        "stock": 50
+    },
+    {
+        "cardNo": 7,
+        "name": "Embaka Men's Stylish Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "/photos/products/f7.jpg",
+        "stock": 50
+    },
+    {
+        "cardNo": 8,
+        "name": "Embaka Men's Stylish Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "/photos/products/f8.jpg",
+        "stock": 50
+    }
+   
+]

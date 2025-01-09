@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAYANA</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/src/style.css">
+
+</head>
+
+<body>
+    <section id="header">
+        <div class="nav-logo">
+            <div class="logo"></div>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a class="cartButton" href="cart.html">
+                        <i class="fa-solid fa-cart-shopping cart-nav">
+                            <span id="cartNo">0</span>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header">
+
+        <h2>Get ready to own it. #cartIsWaiting</h2>
+
+        <p>Save more with coupons (Upto 70% off)</p>
+
+
+    </section>
+
+
+
+    <!-- Template for cart products -->
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td></td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <tbody id="productCartContainer">
+                <!-- Everything of the template tag will be rendered here -->
+            </tbody>
+        </table>
+    </section>
+
+
+    <template id="productCartTemplate">
+        <tr class="cardRow" id="cardValue">
+            <td><i id="remove" class="far fa-times-circle"></i></td>
+            <td><img class="cartImage" src="" alt=""></td>
+            <td class="productName"></td>
+            <td class="productPriceElement"></td>
+            <td>
+                <div class="productQuantityElement">
+                    <p class="productProperty"> </p>
+                    <div class="stockElement">
+                        <button class="cartIncrement">+</button>
+                        <p class="productQuantity">1</p>
+                        <button class="cartDecrement">-</button>
+                    </div>
+                </div>
+            </td>
+            <td class="subtotalCart"></td>
+        </tr>
+
+    </template>
+
+
+    <section id= "cart-add" class = "section-p1">
+        <div id = "subtotalBox">
+            <h3>Cart Summary</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td id = "subtotalOfCart">0</td>
+                </tr>
+                <tr>
+                    <td>Shipping Charges : </td>
+                    <td><strong>Free</strong></td>
+                </tr>
+                
+                <tr>
+                    <td><strong>Total:</strong></td>
+                    <td id = "totalSummary"><strong>0</strong></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </section>
+
+
+
+    <section id="newsletter" class="section-p1 section-m2">
+        <div class="letter1">
+            <h4>Sign Up for Newsletters!</h4>
+            <p>Get E-mail updates about our latest <span>special offers.</span></p>
+
+        </div>
+
+        <div class="letter2">
+            <input placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER  -->
+
+    <footer class="section-p1">
+        <div class="col">
+            <!-- <img src = "/photos/zayana.png" alt = "" class = "logo"> -->
+
+            <h4>Contact</h4>
+            <p><strong>Address : </strong> 562 Wellington Road, Street 32,
+                San Francisco</p>
+            <p><strong>Phone : </strong>+01 9xx9987xxx0</p>
+            <div class="follow">
+                <h4> Follow us: </h4>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="photos/pay/app.jpg" alt="">
+                <img src="photos/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="photos/pay/pay1.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
+        </div>
+
+    </footer>
+
+
+
+
+    <script type="module" src="/src/showCart.js"></script>
+</body>
+
+</html>
