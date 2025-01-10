@@ -1087,6 +1087,21 @@ footer .copyright{
   }
 }
 
+.two-buttons{
+  display: flex;
+  height : 500px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.two-buttons button{
+  background-color: #088178;
+  color : #fff;
+  white-space: nowrap;
+ border-radius: 2rem;
+
+}
+
 
 
 
