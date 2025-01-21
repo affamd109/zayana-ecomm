@@ -1307,6 +1307,12 @@ transition : 0.3s;
   font-size: 12px;
 
 }
+#feat_prod{
+  font-size: 30px;
+}
+#feat_prod_p{
+  font-size: 14px;
+}
 
   .section-p1{
     padding : 20px;
