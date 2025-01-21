@@ -1390,10 +1390,19 @@ transition : 0.3s;
 
   font-size: 15px;
 }
+#page-header {
+  height : 25vh;
+}
 
 #page-header h2 {
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  padding-bottom: 1px;
+
+}
+
+#page-header p {
+  font-size: 0.8rem;
 
 }
 #banner3 {
