@@ -6,6 +6,24 @@ import { incremDecrement } from './incremDecrement';
 import { removeTheCard } from './removeTheCard';
 import { updateCartProdTotal } from './updateCartProdTotal';
 
+
+const bar = document.querySelector("#bar");
+const nav = document.querySelector('#navbar');
+const close = document.querySelector('#close');
+
+if(bar){
+    bar.addEventListener('click' , () =>{
+        nav.classList.add('active');
+    })
+}
+
+if(close){
+    close.addEventListener('click' , () =>{
+        nav.classList.remove('active');
+
+    })
+}
+
 //Then we will need the elemnets in the local storage that 
 
 let cartProducts = getCartProdLS(); //This gives me the array containing elemnts in the local storage

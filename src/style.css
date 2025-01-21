@@ -170,7 +170,7 @@ button.normal{
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #header {
     padding: 10px 20px;
   }
@@ -188,7 +188,25 @@ button.normal{
     font-size: 12px;
     padding: 8px 12px;
   }
+} */
+
+#mobile{
+  display : none;
+  align-items: center;
+
 }
+
+#close{
+  display: none;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -777,91 +795,76 @@ button.white{
   width : 40%;
 }
 
-
-footer{
-
-  display:flex;
+footer {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #011224;
-  height : 350px;
-
+  padding: 20px;
 }
 
-
-
-footer .col{
+footer .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
-  
+  flex: 1 1 200px; /* Makes columns responsive */
 }
 
-footer h4{
+footer h4 {
   font-size: 14px;
   padding-bottom: 20px;
-  color : white;
-
+  color: white;
 }
 
-footer p{
+footer p {
   font-size: 13px;
-  margin : 0 0 8px 0;
-  color : white;
-
-
+  margin: 0 0 8px 0;
+  color: white;
 }
 
-footer a{
+footer a {
   font-size: 13px;
-  color : #222;
+  color: #222;
   margin-bottom: 10px;
   text-decoration: none;
-  color : white;
-
+  color: white;
 }
 
-footer .follow{
+footer .follow {
   margin-top: 20px;
-
 }
 
-footer .follow i{
-  color : white;
+footer .follow i {
+  color: white;
   padding-right: 4px;
-
 }
 
-footer .follow i:hover{
+footer .follow i:hover {
   cursor: pointer;
-  color : #088178;
-
+  color: #088178;
 }
 
-footer a:hover{
+footer a:hover {
   cursor: pointer;
-  color : #088178;
-  text-decoration:underline;
-
+  color: #088178;
+  text-decoration: underline;
 }
 
-
-
-footer .install .row img{
+footer .install .row img {
   border: 1px solid #088178;
   border-radius: 6px;
-  margin : 0 10px 6px 0 ;
-
+  margin: 0 10px 6px 0;
 }
 
-footer .install img{
-  margin : 10px 0 5px 0;
+footer .install img {
+  margin: 10px 0 5px 0;
 }
 
-footer .copyright{
-  width : 100%;
+footer .copyright {
+  width: 100%;
   text-align: center;
+  margin-top: 20px;
 }
 
 
@@ -897,6 +900,12 @@ footer .copyright{
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+
+/*  Cart page*/
+
+#cart{
+  overflow-x : auto;
+}
 
 #cart table{
   width : 100%;
@@ -1025,6 +1034,8 @@ footer .copyright{
 
 }
 
+
+
 #subtotalBox {
   width: 50%;
   border: 1px solid #e2e9e1;
@@ -1109,6 +1120,303 @@ footer .copyright{
 
 }
 
+
+
+
+
+
+@media (max-width : 799px){  /*Like iPad */
+  #navbar {
+    display: flex;
+flex-direction: column;
+align-items: flex-start; 
+justify-content: flex-start;
+position: fixed;
+top: 0;
+right: -300px;
+height: 100vh;
+width: 200px;
+background-color: #E3E6F3;
+box-shadow: 40px 60px 0 rgba(0, 0, 0, 0.1);
+padding: 80px 0 0 10px;
+transition : 0.3s;
+}
+
+#navbar.active{
+  right : 0px;
+}
+
+/* #navbar li{
+  margin-bottom : 25px;
+
+} */ 
+
+#mobile{
+  display : flex;
+  align-items: center;
+
+}
+
+#mobile i{
+  color : #1a1a1a;
+  font-size: 24px;
+  padding-left: 20px;
+
+
+}
+ 
+#close{
+  display:initial;
+  font-size: 25px;
+  position : absolute;
+  top : 30px;
+  color : #1a1a1a;
+
+}
+
+#hero {
+
+  height: 70vh;
+  padding: 0 80px;
+ background-position: top 30% right 50%;
+
+}
+
+#banner{
+  height : 30vh;
+}
+
+#sm-banner .banner-box {
+  min-width: 100%;
+  margin-bottom: 15px;
+}
+
+
+  #newsletter {
+
+    flex-direction: column;
+    height: 20vh; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #newsletter .letter1 {
+    margin-bottom: 1rem;
+  }
+
+  #newsletter h4 {
+    font-size: 18px;
+  }
+
+  #newsletter p {
+    font-size: 12px;
+  }
+
+  #newsletter .letter2 {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+
+  #newsletter input {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  #newsletter button {
+    width: 20%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+
+    #subtotalBox {
+      width: 90%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+  
+    #subtotalBox table td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    #subtotalBox h3 {
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+
+ 
+}
+
+
+/* For phones */ 
+
+@media (max-width : 477px){
+  #navbar {
+    display: flex;
+flex-direction: column;
+align-items: flex-start; 
+justify-content: flex-start;
+position: fixed;
+top: 0;
+right: -300px;
+height: 100vh;
+width: 150px;
+background-color: #E3E6F3;
+box-shadow: 40px 60px 0 rgba(0, 0, 0, 0.1);
+padding: 80px 0 0 10px;
+transition : 0.3s;
+
+}
+
+#navbar li {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#navbar li a{
+  display: block;
+  line-height: 0.5;
+  font-size: 12px;
+
+}
+
+  .section-p1{
+    padding : 20px;
+  }
+ 
+  #header {
+    padding : 10px 20px;
+}
+
+  #hero {
+    padding: 0 20px;
+    background-position: top 30% right 50%;
+  }
+
+  #hero h1 {
+    font-size: 30px;
+    margin-bottom: 10px; /* Reduce bottom margin */
+    line-height: 1.2; /* Adjust line spacing */
+  }
+
+  #hero h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  #hero h4 {
+    font-size: 15px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+
+  #hero p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+
+  #close{
+    display:initial;
+    font-size: 18px;
+    position : absolute;
+    top : 30px;
+    color : #1a1a1a;
+  
+  }
+
+
+#feature {
+  padding : 35px;
+  
+  justify-content: space-between;
+
+}
+
+#feature .feBox {
+  width : 140px;
+  margin : 0 0 15px 0;
+}
+
+#feature h2{
+  font-size : 20px;
+}
+
+
+#product2 .pro {
+  width : 80%;
+}
+
+#banner h2 {
+
+  font-size: 15px;
+}
+
+#page-header h2 {
+
+  font-size: 1.2rem;
+
+}
+
+
+
+  #newsletter {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #newsletter .letter1 {
+    margin-bottom: 20px;
+  }
+
+  #newsletter h4 {
+    font-size: 18px;
+  }
+
+  #newsletter p {
+    font-size: 12px;
+  }
+
+  #newsletter .letter2 {
+    width: 100%;
+  }
+
+  #newsletter input {
+    width: 70%;
+    font-size: 12px;
+    height: 2.5rem;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #newsletter button {
+    width: 30%;
+    font-size: 12px;
+    height: 2.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+
+
+
+
+}
 
 
 
