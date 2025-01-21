@@ -1320,6 +1320,7 @@ transition : 0.3s;
 
   #hero {
     padding: 0 20px;
+    height : 50vh;
     background-position: top 30% right 50%;
   }
 
